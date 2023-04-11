@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-    private final static String STRING_CONN = "jdbc:sqlite:D:/Dati/Documents/My projects/ConyoSQLTest/sqlite-tools-win32-x86-3410200/BGC";
+    private final static String STRING_CONN = "jdbc:sqlite:sqlite-tools-win32-x86-3410200/BGC";
     private static Connection conn;
 
     private static final Map<String, String> KEYWORD_MAPPING = new HashMap<>();
