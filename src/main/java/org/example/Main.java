@@ -21,12 +21,19 @@ public class Main {
         KEYWORD_MAPPING.put("TARA", "");
         KEYWORD_MAPPING.put("TAYO", "");
         KEYWORD_MAPPING.put("MO", "");
+        KEYWORD_MAPPING.put("NA", "");
+        KEYWORD_MAPPING.put("YAN", "");
+        KEYWORD_MAPPING.put("AT", "");
+
         KEYWORD_MAPPING.put("GET", "SELECT");
         KEYWORD_MAPPING.put("SA", "FROM");
+        KEYWORD_MAPPING.put("BRING", "INSERT");
+        KEYWORD_MAPPING.put("THERE", "INTO");
+        KEYWORD_MAPPING.put("WITH", "VALUES");
+        KEYWORD_MAPPING.put("EKIS", "DELETE");
+        KEYWORD_MAPPING.put("SI", "WHERE chikababes = ");
 
-        // TODO: implement INSERT
         // TODO: implement UPDATE
-        // TODO: implement delete
     }
 
     public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException {
@@ -76,6 +83,14 @@ public class Main {
                 while(rs.next()) {
                     System.out.println(rs.getString("chikababes"));
                 }
+                break;
+
+            case "INSERT":
+                stmt.execute(query);
+                break;
+
+            case "DELETE":
+                stmt.execute(query);
                 break;
         }
 
